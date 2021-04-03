@@ -20,30 +20,6 @@ body{
 	padding: 30px;
 }
 
-.block {
-	margin: 0 0 30px 0;
-}
-
-.block p:nth-child(1){
-	background-color: yellow;
-}
-.block p:nth-child(2){
-	background-color: #eee;
-}
-.block p:nth-child(3){
-	background-color: green;
-}
-
-.block p:nth-child(3):hover{
-	background-color: yellow;
-}
-
-
-.block p{
-	font-size: 18px;
-	line-height: 24px;
-	margin: 0px 0px 20px 0px;
-}
 .link {
 	color: red;
 }
@@ -58,53 +34,86 @@ body{
 	color:yellow;
 }
 
-.textinput {
-	border: 1px solid #666;
-	height: 50px;
-	padding: 0px 15px;
-	font-size: 18px;
-	width: 300px;
-	margin: 0px 0px 10px 0px;
-}
-
-.textinput:focus{
-	box-shadow: 0 0 10px rgba(0,0,0,0.8);
-}
-
-
-.textbutton {
-	display: block;
-	width: 300px;
-	height: 50px;
-	background-color: #666;
-	font-size: 18px;
-	color: #fff;
-	text-transform: uppercase;
-	margin: 0px 0px 30px 0px;
-}
-
-.textbutton:hover{
-	background-color: #333;
-	color: yellow;
-}
-.textbutton:active{
-	background-color: #eee;
-}
-
 .list {}
 .list li{
-	font-size: 18px;
-	margin: 0px 0px 15px 0px;
+	font-size: 20px;
+	margin: 0 0 30px 0;
+	padding: 0 0 0 30px;
 }
-/*
-.list li:first-child{
-	color: green;
+
+.list li{
+	background: url('../img/icons/check icon.png') left 0 no-repeat;
+
 }
-.list li:last-child{
-	color: blue;
-	font-weight: 700;
+
+.list li:first-child {
+	text-decoration: line-through;
 }
-*/
-.list li:nth-child(even){
+
+.list li:nth-child(2) {
+	font-weight: bold;
+}
+.list li:nth-child(3) {
+	font-style: italic;
+}
+.list li:last-child {
 	text-transform: uppercase;
+}
+
+/*При наведении*/
+
+.list li:first-child:hover {
+	text-decoration: none;
+}
+
+.list li:nth-child(2):hover {
+	color: red;
+	background: url('../img/icons/check icon red.png')  no-repeat;
+}
+.list li:nth-child(3):hover {
+	font-style: normal;
+}
+.list li:last-child:hover {
+	text-transform: none;
+}
+
+.button{
+
+	width: 220px;
+	height: 45px;
+	background-color: #80b7b3;
+	border-radius: 30px;
+}
+
+.button:hover{
+	background-color: #3a5856;
+}
+.button:active{
+	background-color: #818181;
+}
+
+.full_story {
+	align-items: center;
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.full_story:after{
+	content: url("../img/icons/arrow.png");
+	margin: 10px 0 0 10px;
+}
+
+ .textinput {
+	 border: 1px solid #666;
+	 height: 50px;
+	 padding: 0 15px;
+	 font-size: 18px;
+	 width: 300px;
+	 margin: 0 0 10px 30px;
+ }
+
+.textinput:focus{
+	box-shadow: 0 0 10px #7fbed5;
 }
